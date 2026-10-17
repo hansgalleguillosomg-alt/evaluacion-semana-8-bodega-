@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- La app trabaja 100% local con SQLite (SQLiteOpenHelper): no requiere permisos. -->
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ComercializadoraAngel">
+
+        <!-- CU-01: pantalla inicial (Login) -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Catálogo de productos (pantalla principal) -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <!-- RF-03 / RF-07: registrar y modificar productos -->
+        <activity
+            android:name=".ProductoFormActivity"
+            android:exported="false" />
+
+        <!-- RF-09 / RF-10: categorías -->
+        <activity
+            android:name=".CategoriasActivity"
+            android:exported="false" />
+
+        <!-- Gestión de proveedores -->
+        <activity
+            android:name=".ProveedoresActivity"
+            android:exported="false" />
+
+        <!-- RF-27: usuarios y roles -->
+        <activity
+            android:name=".UsuariosActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

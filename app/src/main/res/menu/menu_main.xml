@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_categorias"
+        android:title="Categorías"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_proveedores"
+        android:title="Proveedores"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_usuarios"
+        android:title="Usuarios y roles"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_logout"
+        android:title="Cerrar sesión"
+        app:showAsAction="never" />
+</menu>
